@@ -1,0 +1,33 @@
+schema: lur.recipe.v1
+source:
+  type: docker-compose
+  upstream: https://nginx.org/
+  compose: docker-compose.yml
+  version_source:
+    type: manual
+
+build:
+  revision: 1
+  architectures:
+    - linux/amd64
+    - linux/arm64
+  embed_images: false
+  forbid_latest_tag: true
+
+compat:
+  min_os_version: 1.5.0
+  lpk_version: 2
+
+policy:
+  risk_accept: []
+  reject:
+    - privileged
+    - host_network
+    - docker_sock
+
+publish:
+  channel: stable
+  categories:
+    - utilities
+  maintainers:
+    - LazyPort Maintainers

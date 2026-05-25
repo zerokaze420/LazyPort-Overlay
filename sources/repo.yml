@@ -1,0 +1,8 @@
+schema: lur.repo.v1
+id: lazyport
+name: LazyPort LUR
+description: Minimal LUR repository for building signed LazyCat LPK packages.
+maintainers:
+  - LazyPort Maintainers
+profiles:
+  default: profiles/default.yml

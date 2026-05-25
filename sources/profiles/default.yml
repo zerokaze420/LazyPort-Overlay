@@ -1,0 +1,14 @@
+schema: lur.profile.v1
+id: default
+name: Default
+policy:
+  forbid_latest_tag: true
+  reject:
+    - privileged
+    - host_network
+    - host_pid
+    - docker_sock
+    - compose.override
+  scan:
+    fail_on:
+      - critical

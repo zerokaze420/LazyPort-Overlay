@@ -1,0 +1,11 @@
+package: cloud.lazycat.app.hello-gui
+version: 1.0.0
+name: Hello GUI
+description: Minimal web GUI for validating the LUR workflow.
+author: LazyPort Maintainers
+license: BSD-2-Clause
+homepage: https://nginx.org/
+min_os_version: 1.5.0
+permissions:
+  required: []
+  optional: []
